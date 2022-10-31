@@ -1,0 +1,139 @@
+/* this css code is a work in progress */
+/* another attempt to reconcile local and remote branches*/
+
+body {
+    margin: 30px;
+}
+
+.first-column {
+display: flex;
+flex-direction: column;
+row-gap: 30px;
+background-color: #494942;
+color: #eeeeee;
+}
+
+.second-column {
+display: flex;
+flex-direction: column;
+row-gap: 30px;
+background-color: #eeeeee;
+}
+
+.third-column {
+display: flex;
+flex-direction: column;
+row-gap: 30px;
+}
+
+.email {
+margin: 2px;
+}
+
+.email-text {
+border: solid black;
+border-radius: 12px;;
+height: 200px;
+width: 100%;
+margin-left: 10px;
+}
+
+.sections {
+    padding-top: 20px;
+}
+
+.my-img {
+   
+    width: 50px;
+    height: 25px; 
+}
+
+.button-compose {
+    font-weight: bold;
+    color: #eeeeee;
+    width: 200px;
+}
+
+.my-list-group-item {
+    background-color: #494942;
+    color: #eeeeee;
+    border: none;
+}
+
+.my-active {
+    font-weight: bold;
+    background-color: #494942;
+    color: #eeeeee;
+    border: none;
+}
+
+.my-list-group-item-messages {
+    background-color: #eeeeee;
+    color: #494942;
+    border: none;
+
+}
+
+.my-active-message {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 12px;
+    box-shadow: 5px 5px #f3f6f4;
+    border-color: #f3f6f4;
+
+
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit {
+    width: 260px;
+    border: solid;
+    border-radius: 12px;
+    border-color: white;
+    display: flex;
+    padding: 9px 4px 9px 40px;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.text-box-reply {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0 10px 5px 0;
+
+}
+
+.btn-reply {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    background-color: white;
+    border-color: #ffc107;
+    border-width: 3px;
+    color: #ffc107;
+    font-weight: bold;  
+}
+
+.my-paperclip {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end; 
+    margin-bottom: 20px;   
+}
+
+.email-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px; 
+}
+
+.my-container {
+    height: max-content;
+}

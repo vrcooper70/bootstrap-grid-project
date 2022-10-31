@@ -1,0 +1,162 @@
+<!-- another attempt to reconcile local and remote branches-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- My CSS-->
+
+    <link href="styles.css" rel="stylesheet">
+    <title>Email</title>
+  </head>
+  <body>
+    <!-- These columns are responsive and resize for desktop, ipad and iphone-->
+    <div class="container my-container">
+        <div class="row">
+          <div class="col-md-3 first-column sections">
+            <div class="row">
+              <img class="img-sm rounded-circle mr-3 my-img" src="Me.jpg" alt="pic">
+              Welcome Virginia!
+            </div>
+            
+          <!-- Welcome Virginia! -->
+          <button type="button" class="btn btn-warning button-compose">COMPOSE</button>
+          
+        
+          <ul class="list-group">
+            <li class="list-group-item  my-active" aria-current="true">Inbox (1)</li>
+            <li class="list-group-item my-list-group-item">Tagged</li>
+            <li class="list-group-item my-list-group-item">Important</li>
+            <li class="list-group-item my-list-group-item">Sent Mail</li>
+            <li class="list-group-item my-list-group-item">Drafts</li>
+            <li class="list-group-item my-list-group-item">Trash</li>
+          </ul>
+          </div>
+          <div class="col-md-3 second-column sections">
+          <!-- Messages -->
+
+          <form class="nosubmit">
+            <input class="nosubmit" type="search" placeholder="Search for emails">
+          </form>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action my-list-group-item-messages">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">LinkedIn</h5>
+                <small>02:45pm</small>
+              </div>
+              <p class="mb-1">You have a new connection request.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action my-list-group-item-messages my-active-message" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Jill Scott Lyrics</h5>
+                <small class="text-muted">July 3, 2022</small>
+              </div>
+              <p class="mb-1">Woke up this morning with a...</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action my-list-group-item-messages">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Cooper Software</h5>
+                <small class="text-muted">Feb 14, 2022</small>
+              </div>
+              <p class="mb-1">Learn how you can earn money by calling (415) 372 7....</p>
+            </a>
+          </div>
+          </div>
+          <div class="col-md-6 third-column">
+          <!-- Selected message that is displayed -->
+          <div class=" row sections">
+            <div class="col">
+                <p class="email">To: virginia@coopersoftware.io</p>
+                <p class="email">From: jill@awesomelyrics.com</p>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+                <h3>Jill Scott Lyrics</h3>
+            </div>
+            <div class="col email-icons"> 
+           
+                <table>
+                    <tr>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                          </svg>
+                        </td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply-fill" viewBox="0 0 16 16">
+                            <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+                          </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></td>
+                    </tr>
+                </table>
+            </div>
+                
+          <div>
+            <h5>The Way</h5>
+            <p>"Woke up this morning with a smile on my face.
+                Jumped out of bed, took a shower, dressed, cleaned up my place.
+                Made me some breakfast, toast, two scrambled eggs, grits.
+                Grabbed my keys, grabbed my purse, grabbed my jacket, off to work.
+                Beaming all the way down 3rd."
+            </p>
+
+            <p>"Is it the way you love me, baby?
+              Is it the way you love me, baby? (Yeah)."
+            </p>
+              <p>
+                "4:30, can't wait to get home (I know you're comin' out with us)
+                Nah, girl, I got something else to do
+                (Damn Jill, don't be frontin' on your girls for real)
+                Go 'head, really get your groove on
+                'Cause tonight my man's coming through (oh word?), yeah
+                We gon' have to connect some other time (it's cool, I understand)
+                As much as I like to shake my thing on the dance floor
+                I got another, nasty, freaky, just-right way in mind (ooh, girl)
+                Tonight, I'm gonna beat the high score (ooh)."   
+              </p>
+              <p>
+                "Is it the way you love me, baby? (Yeah)
+                Is it the way you love me, baby? (Baby)
+                Is it the way you love me, baby? (Is it?)
+                Is it the way you love me, baby?"
+              </p>
+          </div>
+         
+           <div class="row email-text">
+            
+           
+            <div class="col my-paperclip">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                    <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                  </svg>
+            </div>
+
+            <div class="col text-box-reply btn-reply">
+                <form class="d-flex">
+                    <button class="btn btn-outline-success btn-reply" type="submit">REPLY</button>
+                  </form>
+            </div>
+            
+            
+           </div>
+           
+          </div>
+          </div>
+        </div>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+    
+  </body>
+</html>
