@@ -1,29 +1,48 @@
 body {
-    background-image: url("beach-02.jpg");
-    margin: 20px;
+    background-image: url("beach-03.jpg");
+    margin: 10px;
   
 }
 
 .container {
     
+    width: max-content; 
     height: max-content;
+   
 }
+
+.container-2 {
+ position: relative;
+ 
+}
+.container-2 svg {
+    display: block;
+}
+
+.container-2 .bi-download {
+    position: absolute; top: 15px; left:48px;
+    fill: red;
+    border: solid white;
+    border-radius: 25px;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+}
+
 .first-col {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     
-    
-    
-   /* border: solid black; */
 }
+
+
 
 .second-col {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 
-   /* border: dotted red; */
 }
 
 .third-col {
@@ -31,28 +50,30 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-
-   /* border: solid blue;
-   border-radius: 12px; */
 }
 
 .sections {
     padding-top: 10px;
+    column-gap: 30px;
 
 }
 
 .button-compose {
+    border: none;
     border-radius: 12px;
     font-weight: bold;
     background-color: white;
     color: #494942;
     width: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
 .my-list-group-items {
     color: white;
     border: none;
     background-color: rgba(135, 181, 234, 0.003);
+    
 }
 
 .my-active {
@@ -67,11 +88,58 @@ body {
     display: flex;
     flex-direction: row;
     row-gap: 30px;
+   
 }
+
+.sub-rows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    border: solid white;
+    background-color: white;
+    opacity: 0.5;
+    margin-top: 10px;
+    
+}
+
+.far-left-col {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+
+    background-color: rgba(135, 181, 234, 0.47);
+    /* border: solid rgba(135, 181, 234, 0.661); */
+
+}
+
+.far-left-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.far-right-col {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+   
+   
+
+}
+
+.far-right-row {
+
+    display: flex;
+    flex-direction: column;
+}
+
 
 form.nosubmit {
     border: none;
     padding: 0;
+    margin-top: 20px;
+    
 }
 
 input.nosubmit {
@@ -97,13 +165,29 @@ input.nosubmit {
     .active-email {
         color:#494942;
         font-weight: bold;
-        background-color: rgb(135, 181, 234);
+        background-color: rgba(135, 181, 234, 0.334);
     }
 
     .drop-btn {
-        
+        padding: 2px;
+        display: inline-block;
         width: 200px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.419);
+        border: none;
+        margin-left: 20px;
+        /* margin-top: 10px; */
+    }
+
+    .drop-btn-2 {
+        padding: 2px;
+        display: inline-block;
+        width: 50px;
         border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.419);
+        border: none;
+       
+        margin-top: 10px;
     }
 
     .my-icons {
@@ -112,13 +196,7 @@ input.nosubmit {
         fill: green;    
     }
 
-    .btns-1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 20px;
-
-    }
+   
 
     p.btn-text {
         display: flex;
@@ -133,26 +211,36 @@ input.nosubmit {
     }
 
     .my-img {
-   
-        width: 50px;
-        height: 25px; 
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        width: 30px;
+        height: 30px; 
+        margin-top: 40px;
+        margin-left: 20px;
     }
 
-    .image-box {
-        border: solid grey;
-        border-radius: 25px;
+    .my-png {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 20px;
-        height: 50px;
-        width: 200px;
-        padding: 4px 10px 4px 10px;
-        box-shadow: 5px 5px grey;
+        width: 100px;
+        height: 100px;
     }
 
+    .my-png-row {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
     .top-icons {
         color: white;
+        width: 25px;
+        height: 25px; 
+    }
+
+    .top-icons-2 {
+        margin-top: 30px;
     }
 
     .my-opaques {
@@ -161,31 +249,29 @@ input.nosubmit {
         
     }
     
-   /* .text-box {
-    border:black;
-    border-radius: 12px;
-    height: 200px;
-
-   } */
+   
 
    .my-list-group-row {
-    background-color: #49494230;
+    background-color: #4949427f;
+    color: white;
    }
 
    .my-list-group-row-2 {
-    background-color: rgba(255, 255, 255, 0.605);
+    background-color: rgba(255, 255, 255, 0.551);
    }
 
    .text-box {
-    background-color: rgba(255, 255, 255, 0.427);
-    border: solid rgba(255, 255, 255, 0.427);
+    background-color: rgba(255, 255, 255, 0.537);
+    border: solid rgba(255, 255, 255, 0.537);
     border-radius: 12px;;
-    height: 600px;
+    height: 650px;
     width: 100%;
     margin-left: 10px;
+    margin-top: 40px;
+    
     }
 
-    p.empty-page {
+    p.empty-page-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -195,7 +281,216 @@ input.nosubmit {
     p.empty-page-2 {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        align-items:center;
-        padding-bottom: 0px;
+        align-items:center; 
+        margin-top: 50px;
+        
     }
+
+    p.empty-page-3 {
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        margin-bottom: 5px;
+        
+    }
+    .span {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+       
+    }
+
+
+    .items-align {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+
+        gap: 10px;
+
+        padding-left: 12px;
+        padding-top: 15px;
+       
+           
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .time {
+        
+        font-size: small;
+       
+    }
+
+    .my-align-right {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        
+       
+    }
+
+    p.unread-emails {
+        font-weight: bold;
+    }
+
+    .unread-emails {
+        font-weight: bold;
+       
+    }
+
+    .far-left-items-align {
+
+        gap: 5px;
+           
+    }
+
+    .spacer {
+        
+        margin-left: 15px;
+        font-size: large;
+    }
+
+    .spacer-a {
+        margin-left: 4px;
+    }
+
+    .spacer-b {
+        margin-left: 9px;
+    }
+
+    .spacer-b-2 {
+        margin-left: 9px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .spacer-b-3 {
+        margin-left: 1px;
+    }
+
+    .spacer-2 {
+        margin-left: 25px;
+    }
+
+    .spacer-3 {
+        margin-left: 5px;
+    }
+
+    .spacer-4 {
+        margin-left: 15px;
+        font-size: large;
+    }
+
+    .spacer-5 {
+        margin-right: 75px;
+        font-size: larger;
+
+    }
+
+    .spacer-6 {
+       
+        margin-left: 30px;
+    }
+
+    .spacer-6-a {
+        margin-top: 15px;
+    }
+
+    .spacer-7 {
+        margin-left: 70px;
+    }
+
+    .spacer-8 {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        padding-left: 12px;
+        padding-top: 15px;     
+    }
+
+    .spacer-9-a {
+        margin-top: 200px;
+        margin-left: 20px;
+    }
+
+    .spacer-9-b {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .selected {
+        background-color: rgba(255, 255, 255, 0.306);
+        border: none;
+        border-radius: 25px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .far-right-items-align {
+       margin-right: 10px;
+    }
+
+
+    .float-left {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        margin-left: 5px;;
+        margin-right: 50px;
+    }
+
+    .float-right {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        margin-right: 5px;
+        margin-left: 50px;
+    }
+
+    .middle-text {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        color: black;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 5px;
+        margin-top: 300px;
+    }
+
+    .yellow {
+        color: yellow;
+        fill: yellow;
+    }
+
+    .blue {
+        color: blue;
+        fill: blue;
+    }
+
+
+    .green {
+        color: green;
+        fill: green;
+    }
+
+    .orange {
+        color: orange;
+        fill: orange;
+    }
+
+
+    .red {
+        color: red;
+        fill: red;
+    }
+
+
+  
